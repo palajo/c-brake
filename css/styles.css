@@ -6,7 +6,7 @@ html, body{
 	height: 100%;
 }
 header{
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 1;
 
@@ -38,38 +38,38 @@ body{
 }
 /* h1, h2, h3, h4, h5, p, div, a*/
 h1{
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 42px;
+    font-weight: 600;
 
-    line-height: 48px;
+    line-height: 42px;
     margin: 0;
 }
 h2{
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 600;
 
     line-height: 36px;
     margin: 0;
 }
 h3{
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 600;
 
-    line-height: 36px;
+    line-height: 24px;
     margin: 0;
 }
 h4{
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 600;
 
-    line-height: 30px;
+    line-height: 18px;
     margin: 0;
 }
 h5{
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 500;
 
-    line-height: 24px;
+    line-height: 16px;
     margin: 0;
 }
 p{
@@ -80,6 +80,7 @@ p{
     margin: 0;
 }
 a, a:hover{
+    color: white;
     text-decoration: none;
 }
 
@@ -94,6 +95,9 @@ ul.main-navigation > li.nav-item > a.nav-link{
     color: white;
     transition: 0.2s ease;
 }
+ul.main-navigation > li.nav-item.active > a.nav-link{
+    color: #C90015;
+}
 ul.main-navigation > li.nav-item > a.nav-link.active{
     color: #C90015;
 }
@@ -101,23 +105,30 @@ ul.main-navigation > li.nav-item > a.nav-link:hover{
     color: #cdcbcb;
 }
 /* button */
-a.button.high-quality{
-    padding: 0px 30px;
+button.button.high-quality{
+    line-height: 24px;
+	width: 180px;
 }
-a.button{
-  display: inline-block;
-  padding: 10px 40px;
+button.button{
+	display: inline-block;
 
-  font-size: 16px;
-  font-weight: 600;
-  color: white;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
 
-  position: relative;
-  z-index: 1;
+	line-height: 50px;
+	width: 240px;
 
-  transition: 0.3s ease;
+	color: white;
+
+	background: none;
+	outline: none;
+	border: none;
+
+	position: relative;
+	z-index: 1;
 }
-a.button::before {
+button.button::before {
     content: '';
 
     position: absolute;
@@ -126,18 +137,16 @@ a.button::before {
     bottom: 0;
     left: 0;
 
-    background: #C90015;
-    border: 2px solid #C90015;
+    background: linear-gradient(to right, #f23030 50%, #C90015 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
 
-    transition: 0.3s ease;
+	transition:all 0.3s ease;
     transform: skew(150deg);
     z-index: -1;
 }
-a.button:hover::before{
-    background: none;
-}
-a.button:hover{
-    color: #1f1f1f;
+button.button:hover::before{
+	background-position: left bottom;
 }
 /* paralelogram button */
 li.my-language-switcher-item{
@@ -167,22 +176,25 @@ a.my-language-switcher-link::before {
     bottom: 0;
     left: 0;
 
-    background: none;
-    border: 2px solid #C90015;
+	border: 2px solid #C90015;
 
+	background: linear-gradient(to right, #C90015 50%, rgba(0,0,0,0) 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+
+	transition:all 0.3s ease;
     transform: skew(150deg);
     z-index: -1;
 }
 a.my-language-switcher-link:hover::before{
-    background: #C90015;
-    transition: 0.2s ease;
+	background-position: left bottom;
 }
 
 /*******/
-.product-category h2{
+.product-category h1{
     font-weight: 600;
 }
-.product-name h2{
+.product-name h1{
     font-weight: 700;
     line-height: 48px;
 
@@ -198,9 +210,41 @@ h4.icon-graphic-heading{
     font-weight: 600;
     font-size: 18px;
 }
-.space{
-    margin-bottom: 40px;
+
+/* margin-bottoms */
+.space-100px{
+	margin-bottom: 100px;
+}
+.space-50px{
+	margin-bottom: 50px;
+}
+.space-40px{
+	margin-bottom: 40px;
+}
+.space-30px{
+	margin-bottom: 30px;
 }
 .text-align-center{
     text-align: center;
+}
+
+
+/* contact form */
+input.myform{
+    border: 1px solid #DEDEDE;
+    border-radius: 0px;
+
+    line-height: 40px;
+}
+textarea.message{
+    width: 100%;
+
+    border: 1px solid #dedede;
+    border-radius: 0px;
+
+    margin-top: 10px;
+    padding: 15px;
+}
+.myform-submit{
+	margin-top: 10px;
 }
