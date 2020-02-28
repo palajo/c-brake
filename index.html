@@ -5,11 +5,11 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>C-brake | SimpleSmart</title>
 
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?v=1" />
+    <link rel="stylesheet" type="text/css" href="./css/fullpage.css?v=1" />
 
-	<link rel="stylesheet" type="text/css" href="./css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="./css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="./css/styles.css?v=2" />
+    <link rel="stylesheet" type="text/css" href="./css/fonts.css?v=1" />
 
 
 </head>
@@ -52,6 +52,31 @@
         </div>
     </div>
 </header>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-3 d-flex justify-content-start ml-auto align-self-center">
+				<img src="./img/logo.svg" width="100px" />
+			</div>
+			<div class="col-6 d-flex justify-content-center ml-auto align-self-center">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<ul class="navbar-nav main-navigation">
+						<li class="nav-item"><a class="nav-link active" href="#">Главная</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-3">
+				<div class="row justify-content-end ml-auto align-self-center">
+					<nav class="navbar">
+						<button class="button high-quality">HIGH QUALITY</button>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 <body>
     <div id="fullpage">
     	<div class="section active" id="section0">
@@ -118,8 +143,8 @@
         </div>
         <div class="section" id="section1">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-10 text-align-center">
+                <div class="row space-100px justify-content-center">
+                    <div class="col-12 about-width text-align-center">
                         <h2 class="space-30px">ТОРМОЗНЫЕ КОЛОДКИ</h2>
                         <p>
                             Lorem Ipsum - это текст-«рыба», часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
@@ -129,6 +154,29 @@
                         </p>
                     </div>
                 </div>
+				<div class="row justify-content-center">
+					<div class="col-md-6 col-margin text-align-center">
+						<h2 class="space-30px">СВЯЗАТЬСЯ С НАМИ</h2>
+						<form method="post" action="./post.php">
+							<div class="form-row">
+								<div class="col">
+									<input name="name" type="text" class="form-control myform" placeholder="Ваше имя" required>
+								</div>
+								<div class="col">
+									<input name="email" type="text" class="form-control myform" placeholder="Ваш e-mail" required>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="col">
+									<textarea name="msg" class="message" placeholder="Ваше обращение.." required></textarea>
+								</div>
+							</div>
+							<div class="form-row d-flex justify-content-center">
+								<button class="button myform-submit" name="submit" type="submit">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
             </div>
         </div>
     <div class="section" id="section2">
@@ -140,15 +188,15 @@
                         <form method="post" action="./post.php">
                             <div class="form-row">
                                 <div class="col">
-                                    <input name="name" type="text" class="form-control myform" placeholder="Name" required>
+                                    <input name="name" type="text" class="form-control myform" placeholder="Ваше имя" required>
                                 </div>
                                 <div class="col">
-                                    <input name="email" type="text" class="form-control myform" placeholder="E-mail adress" required>
+                                    <input name="email" type="text" class="form-control myform" placeholder="Ваш e-mail" required>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col">
-                                    <textarea name="msg" class="message" placeholder="Message.." required></textarea>
+                                    <textarea name="msg" class="message" placeholder="Ваше обращение.." required></textarea>
                                 </div>
                             </div>
                             <div class="form-row d-flex justify-content-center">
@@ -165,7 +213,7 @@
                                 <p>Петя Иванов - info@c-brake.com</p>
                             </div>
                             <div class="col-md-6">
-                                <p><b>График работы</b></p>
+                                <p><b>ГРАФИК РАБОТЫ</b></p>
                                 <p>Пн - Пт с 09:00 до 18:00</p>
                             </div>
                         </div>
@@ -176,11 +224,11 @@
     </div>
 </body>
 
-<script type="text/javascript" src="./js/fullpage.js"></script>
+<script type="text/javascript" src="./js/fullpage.js?v=1"></script>
 <script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {
         anchors: ['product', 'about', 'contacts'],
-		sectionsColor: ['#fff', '#f8f8f8', '#fff'],
+		sectionsColor: ['#fff', '#fff', '#fff'],
 
         menu: '#menu',
 

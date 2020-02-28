@@ -2,9 +2,6 @@
 	margin: 0;
 	padding: 0;
 }
-html, body{
-	height: 100%;
-}
 header{
     position: fixed;
     width: 100%;
@@ -12,20 +9,24 @@ header{
 
     background: url(../img/header-background.png);
 	background-size: cover;
+	background-position: bottom center;
 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 8px solid #C90015;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 footer{
-    position: absolute;
+	position: fixed;
+
     width: 100%;
     z-index: 1;
-    bottom: 0;
-    background: #071E5C;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-top: 8px solid #C90015;
+	bottom: 0;
+
+	background: url(../img/footer-background.png);
+	background-size: cover;
+	background-position: top center;
+
+	padding-top: 15px;
+    padding-bottom: 15px;
 }
 body{
 	font-family: 'Qanelas';
@@ -212,6 +213,9 @@ h4.icon-graphic-heading{
     font-weight: 600;
     font-size: 18px;
 }
+.about-width{
+	max-width: 900px;
+}
 
 /* margin-bottoms */
 .space-100px{
@@ -236,13 +240,21 @@ input.myform{
     border: 1px solid #DEDEDE;
     border-radius: 0px;
 
-    line-height: 40px;
+	font-size: 14px;
+	height: 40px;
+
+	padding: 0px 15px;
 }
 textarea.message{
     width: 100%;
+	height: 120px;
+
+	resize: none;
 
     border: 1px solid #dedede;
     border-radius: 0px;
+
+	font-size: 14px;
 
     margin-top: 10px;
     padding: 15px;
