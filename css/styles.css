@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	height: 100%;
+}
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    background: #071E5C;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 8px solid #C90015;
+}
+body{
+	font-family: 'Qanelas';
+	font-size: 16px;
+	line-height: 24px;
+
+	font-weight: normal;
+	color: #333;
+
+	-webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+/* h1, h2, h3, h4, h5, p, div*/
+h1{
+    font-size: 48px;
+    font-weight: 700;
+
+    line-height: 48px;
+    margin: 0;
+}
+h2{
+    font-size: 36px;
+    font-weight: 700;
+
+    line-height: 36px;
+    margin: 0;
+}
+h3{
+    font-size: 30px;
+    font-weight: 600;
+
+    line-height: 30px;
+    margin: 0;
+}
+h4{
+    font-size: 24px;
+    font-weight: 600;
+
+    line-height: 24px;
+    margin: 0;
+}
+h5{
+    font-size: 18px;
+    font-weight: 500;
+
+    line-height: 18px;
+    margin: 0;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 24px;
+    margin: 0;
+}
+
+
+.container{
+    max-width: 1440px;
+}
+ul.main-navigation > li.nav-item{
+    padding: 0px 15px;
+}
+ul.main-navigation > li.nav-item > a.nav-link{
+    padding: 0;
+    color: white;
+    transition: 0.2s ease;
+}
+ul.main-navigation > li.nav-item > a.nav-link.active{
+    color: #C90015;
+}
+ul.main-navigation > li.nav-item > a.nav-link:hover{
+    color: #cdcbcb;
+}
+
+
+/* paralelogram button */
+li.my-language-switcher-item{
+    padding: 0px 5px;
+    list-style: none;
+}
+a.my-language-switcher-link{
+  display: inline-block;
+  padding: 0px 20px;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+
+  position: relative;
+  z-index: 1;
+}
+a.my-language-switcher-link.active::before{
+    background: #C90015;
+}
+a.my-language-switcher-link::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: none;
+    border: 2px solid #C90015;
+
+    transform: skew(150deg);
+    z-index: -1;
+}
+a.my-language-switcher-link:hover::before{
+    background: #C90015;
+    transition: 0.2s ease;
+}
+
+/*******/
+
+.product-title{
+    margin-bottom: 35px;
+}
+.product-category h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.product-name h2{
+    font-size: 30px;
+    font-weight: 700;
+
+    color: #C90015;
+}
+.product-description{
+    max-width: 450px;
+}
