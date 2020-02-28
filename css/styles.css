@@ -10,7 +10,9 @@ header{
     width: 100%;
     z-index: 1;
 
-    background: #071E5C;
+    background: url(../img/header-background.png);
+	background-size: cover;
+
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 8px solid #C90015;
