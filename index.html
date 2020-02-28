@@ -46,19 +46,17 @@
         </div>
     </div>
 </header>
-
 <body>
     <div id="fullpage">
     	<div class="section active" id="section0">
 
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
+                <div class="row justify-content-between">
+                    <div class="col-md-5">
                         <img src="./img/item.png" width="100%">
                     </div>
-                    <div class="col-md-6">
-
-                        <div class="product-title">
+                    <div class="col-md-6 ml-auto align-self-center">
+                        <div class="col-12 product-title">
                             <div class="product-category">
                                 <h2>ТОРМОЗНЫЕ КОЛОДКИ</h2>
                             </div>
@@ -66,7 +64,9 @@
                                 <h2>С-BRAKE</h2>
                             </div>
                         </div>
-                        <div class="product-description">
+                        <div class="space">
+                        </div>
+                        <div class="col-12 product-description">
                             <p>
                                 Lorem Ipsum - это текст-«рыба», часто используемый в
                                 печати и вэб-дизайне. Lorem Ipsum является
@@ -74,39 +74,38 @@
                                 XVI века.
                             </p>
                         </div>
-                        <div class="product-benefits">
+                        <div class="space">
+                        </div>
+                        <div class="col-12 product-benefits">
                             <div class="row">
-                                <div class="col-4">
-                                    <div class="row justify-content-center">
-                                        <div class="icon-graphic">
-                                            <img src="./quality.svg" width="24px">
+                                <div class="col-10">
+                                    <div class="row">
+                                        <div class="col-4 text-align-center">
+                                            <div class="icon-graphic">
+                                                <img src="./img/quality.svg" width="64px">
+                                            </div>
+                                            <h4 class="icon-graphic-heading">Качество</h4>
                                         </div>
-                                    </div>
-                                    <div class="row justify-content-center">
-                                        Качество
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="row justify-content-center">
-                                        <div class="icon-graphic">
-                                            <img src="./quality.svg" width="24px">
+                                        <div class="col-4 text-align-center">
+                                            <div class="icon-graphic">
+                                                <img src="./img/good.svg" width="64px">
+                                            </div>
+                                            <h4 class="icon-graphic-heading">Надежность</h4>
                                         </div>
-                                    </div>
-                                    <div class="row justify-content-center">
-                                        Качество
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="row justify-content-center">
-                                        <div class="icon-graphic">
-                                            <img src="./quality.svg" width="24px">
+                                        <div class="col-4 text-align-center">
+                                            <div class="icon-graphic ">
+                                                <img src="./img/long-term.svg" width="64px">
+                                            </div>
+                                            <h4 class="icon-graphic-heading">Долговечность</h4>
                                         </div>
-                                    </div>
-                                    <div class="row justify-content-center">
-                                        Качество
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="space">
+                        </div>
+                        <div class="col-12">
+                            <a class="button" href="#">Написать нам</a>
                         </div>
 
                     </div>
@@ -116,7 +115,31 @@
         </div>
     </div>
 </body>
-
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 d-flex justify-content-start ml-auto align-self-center">
+                <img src="./img/logo.svg" width="100px" />
+            </div>
+            <div class="col-6 d-flex justify-content-center ml-auto align-self-center">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <ul class="navbar-nav main-navigation">
+                        <li class="nav-item"><a class="nav-link active" href="#">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-3">
+                <div class="row justify-content-end ml-auto align-self-center">
+                    <nav class="navbar">
+                        <a class="button high-quality">HIGH QUALITY</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 <script type="text/javascript" src="./js/fullpage.js"></script>
 <script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {

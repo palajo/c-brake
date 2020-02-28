@@ -11,9 +11,19 @@ header{
     z-index: 1;
 
     background: #071E5C;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border-bottom: 8px solid #C90015;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+    background: #071E5C;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 8px solid #C90015;
 }
 body{
 	font-family: 'Qanelas';
@@ -26,7 +36,7 @@ body{
 	-webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
 }
-/* h1, h2, h3, h4, h5, p, div*/
+/* h1, h2, h3, h4, h5, p, div, a*/
 h1{
     font-size: 48px;
     font-weight: 700;
@@ -35,31 +45,31 @@ h1{
     margin: 0;
 }
 h2{
-    font-size: 36px;
+    font-size: 42px;
     font-weight: 700;
+
+    line-height: 42px;
+    margin: 0;
+}
+h3{
+    font-size: 36px;
+    font-weight: 600;
 
     line-height: 36px;
     margin: 0;
 }
-h3{
+h4{
     font-size: 30px;
     font-weight: 600;
 
     line-height: 30px;
     margin: 0;
 }
-h4{
-    font-size: 24px;
-    font-weight: 600;
-
-    line-height: 24px;
-    margin: 0;
-}
 h5{
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
 
-    line-height: 18px;
+    line-height: 24px;
     margin: 0;
 }
 p{
@@ -69,7 +79,9 @@ p{
     line-height: 24px;
     margin: 0;
 }
-
+a, a:hover{
+    text-decoration: none;
+}
 
 .container{
     max-width: 1440px;
@@ -88,8 +100,45 @@ ul.main-navigation > li.nav-item > a.nav-link.active{
 ul.main-navigation > li.nav-item > a.nav-link:hover{
     color: #cdcbcb;
 }
+/* button */
+a.button.high-quality{
+    padding: 0px 30px;
+}
+a.button{
+  display: inline-block;
+  padding: 10px 40px;
 
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
 
+  position: relative;
+  z-index: 1;
+
+  transition: 0.3s ease;
+}
+a.button::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: #C90015;
+    border: 2px solid #C90015;
+
+    transition: 0.3s ease;
+    transform: skew(150deg);
+    z-index: -1;
+}
+a.button:hover::before{
+    background: none;
+}
+a.button:hover{
+    color: #1f1f1f;
+}
 /* paralelogram button */
 li.my-language-switcher-item{
     padding: 0px 5px;
@@ -130,20 +179,29 @@ a.my-language-switcher-link:hover::before{
 }
 
 /*******/
-
-.product-title{
-    margin-bottom: 35px;
-}
 .product-category h2{
-    font-size: 30px;
     font-weight: 600;
 }
 .product-name h2{
-    font-size: 30px;
     font-weight: 700;
+    line-height: 64px;
 
     color: #C90015;
 }
 .product-description{
     max-width: 450px;
+}
+.icon-graphic{
+    background: #f0f0f0;
+    margin: 10px 0px;
+}
+h4.icon-graphic-heading{
+    font-weight: 600;
+    font-size: 18px;
+}
+.space{
+    margin-bottom: 50px;
+}
+.text-align-center{
+    text-align: center;
 }
