@@ -11,8 +11,8 @@ header{
     z-index: 1;
 
     background: #071E5C;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 8px solid #C90015;
 }
 footer{
@@ -21,8 +21,8 @@ footer{
     z-index: 1;
     bottom: 0;
     background: #071E5C;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-top: 8px solid #C90015;
 }
 body{
@@ -45,10 +45,10 @@ h1{
     margin: 0;
 }
 h2{
-    font-size: 42px;
+    font-size: 36px;
     font-weight: 700;
 
-    line-height: 42px;
+    line-height: 36px;
     margin: 0;
 }
 h3{
@@ -184,7 +184,7 @@ a.my-language-switcher-link:hover::before{
 }
 .product-name h2{
     font-weight: 700;
-    line-height: 64px;
+    line-height: 48px;
 
     color: #C90015;
 }
@@ -192,7 +192,6 @@ a.my-language-switcher-link:hover::before{
     max-width: 450px;
 }
 .icon-graphic{
-    background: #f0f0f0;
     margin: 10px 0px;
 }
 h4.icon-graphic-heading{
@@ -200,7 +199,7 @@ h4.icon-graphic-heading{
     font-size: 18px;
 }
 .space{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .text-align-center{
     text-align: center;
