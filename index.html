@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./css/fullpage.css?v=1" />
 
 	<link rel="stylesheet" type="text/css" href="./css/styles.css?v=2" />
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css?v=2" />
     <link rel="stylesheet" type="text/css" href="./css/fonts.css?v=1" />
 
 
@@ -16,11 +17,11 @@
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-3 d-flex justify-content-start ml-auto align-self-center">
-                <a href="#"><img src="./img/logo.svg" width="100px" /></a>
+            <div class="col-lg-3 d-flex justify-content-start ml-auto align-self-center mobile-center">
+                <a href="#"><img class="logo" src="./img/logo.svg" width="100px" /></a>
             </div>
-            <div class="col-6 d-flex justify-content-center ml-auto align-self-center">
-                <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="col-lg-6 d-flex justify-content-center ml-auto align-self-center">
+                <nav class="navbar navbar-expand-lg navbar-light none">
                     <ul class="navbar-nav main-navigation" id="menu">
                         <li class="nav-item" data-menuanchor="product">
                             <a class="nav-link" href="#product">Главная</a>
@@ -34,8 +35,8 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-3">
-                <div class="row justify-content-end">
+            <div class="col-lg-3">
+                <div class="row justify-content-end mobile-center ml-auto align-self-center">
                     <nav class="navbar">
                         <li class="my-language-switcher-item">
                             <a class="my-language-switcher-link" href="#">EN</a>
@@ -52,22 +53,28 @@
         </div>
     </div>
 </header>
-<footer>
+<footer class="none">
 	<div class="container">
 		<div class="row">
-			<div class="col-3 d-flex justify-content-start ml-auto align-self-center">
-				<img src="./img/logo.svg" width="100px" />
+			<div class="col-lg-3 d-flex justify-content-start ml-auto align-self-center">
+				<img class="logo" src="./img/logo.svg" width="100px" />
 			</div>
 			<div class="col-6 d-flex justify-content-center ml-auto align-self-center">
-				<nav class="navbar navbar-expand-lg navbar-light">
-					<ul class="navbar-nav main-navigation">
-						<li class="nav-item"><a class="nav-link active" href="#">Главная</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
-					</ul>
-				</nav>
+                <nav class="navbar navbar-expand-lg navbar-light none">
+                    <ul class="navbar-nav main-navigation" id="menu">
+                        <li class="nav-item" data-menuanchor="product">
+                            <a class="nav-link" href="#product">Главная</a>
+                        </li>
+                        <li class="nav-item" data-menuanchor="about">
+                            <a class="nav-link" href="#about">О нас</a>
+                        </li>
+                        <li class="nav-item" data-menuanchor="contacts">
+                            <a class="nav-link" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
 			</div>
-			<div class="col-3">
+			<div class="col-lg-3">
 				<div class="row justify-content-end ml-auto align-self-center">
 					<nav class="navbar">
 						<button class="button high-quality">HIGH QUALITY</button>
@@ -82,10 +89,10 @@
     	<div class="section active" id="section0">
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-6">
-                        <img src="./img/item.png" width="100%">
+                    <div class="col-lg-6">
+                        <img class="product-image" src="./img/item.png" width="100%">
                     </div>
-                    <div class="col-6 ml-auto align-self-center">
+                    <div class="col-lg-6 ml-auto align-self-center">
                         <div class="col-12 product-title space-30px">
                             <div class="product-category">
                                 <h1>ТОРМОЗНЫЕ КОЛОДКИ</h1>
@@ -94,9 +101,9 @@
                                 <h1>С-BRAKE</h2>
                             </div>
                         </div>
-                        <div class="col-12 space-40px">
+                        <div class="col-12">
                             <div class="row justify-content-start">
-                              <div class="col-10">
+                              <div class="col-lg-10">
                                   <p>
                                       Lorem Ipsum - это текст-«рыба», часто используемый в
                                       печати и вэб-дизайне. Lorem Ipsum является
@@ -107,23 +114,23 @@
                             </div>
 
                         </div>
-                        <div class="col-12 space-50px product-benefits">
+                        <div class="col-12 product-benefits">
                             <div class="row">
-                                <div class="col-10">
+                                <div class="col-lg-10">
                                     <div class="row">
-                                        <div class="col-4 text-align-center">
+                                        <div class="col-md-4 text-align-center icon-graphic-block text-align-center-disabled col-to-row">
                                             <div class="icon-graphic">
                                                 <img src="./img/quality.svg" width="64px">
                                             </div>
                                             <h4 class="icon-graphic-heading">Качество</h4>
                                         </div>
-                                        <div class="col-4 text-align-center">
+                                        <div class="col-lg-4 text-align-center icon-graphic-block text-align-center-disabled col-to-row">
                                             <div class="icon-graphic">
                                                 <img src="./img/good.svg" width="64px">
                                             </div>
                                             <h4 class="icon-graphic-heading">Надежность</h4>
                                         </div>
-                                        <div class="col-4 text-align-center">
+                                        <div class="col-lg-4 text-align-center icon-graphic-block text-align-center-disabled col-to-row">
                                             <div class="icon-graphic ">
                                                 <img src="./img/long-term.svg" width="64px">
                                             </div>
@@ -144,9 +151,9 @@
         <div class="section" id="section1">
             <div class="container">
                 <div class="row space-100px justify-content-center">
-                    <div class="col-12 about-width text-align-center">
+                    <div class="col-12 about-width text-align-center text-align-center-disabled">
                         <h2 class="space-30px">ТОРМОЗНЫЕ КОЛОДКИ</h2>
-                        <p>
+                        <p class="text-align-center-disabled">
                             Lorem Ipsum - это текст-«рыба», часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
                             «рыбой» для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию
                             размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил
@@ -155,7 +162,7 @@
                     </div>
                 </div>
 				<div class="row justify-content-center">
-					<div class="col-md-6 col-margin text-align-center">
+					<div class="col-lg-6 col-margin text-align-center text-align-center-disabled">
 						<h2 class="space-30px">СВЯЗАТЬСЯ С НАМИ</h2>
 						<form method="post" action="./post.php">
 							<div class="form-row">
@@ -171,7 +178,7 @@
 									<textarea name="msg" class="message" placeholder="Ваше обращение.." required></textarea>
 								</div>
 							</div>
-							<div class="form-row d-flex justify-content-center">
+							<div class="form-row d-flex justify-content-center mobile-left">
 								<button class="button myform-submit" name="submit" type="submit">Отправить</button>
 							</div>
 						</form>
@@ -183,7 +190,21 @@
         <div class="container">
             <div class="col-12">
                 <div class="row space-100px justify-content-center">
-                    <div class="col-md-6 col-margin text-align-center">
+                    <div class="col-lg-6 col-margin text-align-center text-align-center-disabled">
+                        <div class="row">
+                            <div class="col-lg-6 space-30px-mobile">
+                                <p><b>МЕНЕДЖЕР</b></p>
+                                <p>Петя Иванов - info@c-brake.com</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <p><b>ГРАФИК РАБОТЫ</b></p>
+                                <p>Пн - Пт с 09:00 до 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-margin text-align-center text-align-center-disabled">
                         <h2 class="space-30px">СВЯЗАТЬСЯ С НАМИ</h2>
                         <form method="post" action="./post.php">
                             <div class="form-row">
@@ -199,24 +220,10 @@
                                     <textarea name="msg" class="message" placeholder="Ваше обращение.." required></textarea>
                                 </div>
                             </div>
-                            <div class="form-row d-flex justify-content-center">
+                            <div class="form-row d-flex justify-content-center mobile-left">
                                 <button class="button myform-submit" name="submit" type="submit">Отправить</button>
                             </div>
                         </form>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-6 col-margin text-align-center">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p><b>МЕНЕДЖЕР</b></p>
-                                <p>Петя Иванов - info@c-brake.com</p>
-                            </div>
-                            <div class="col-md-6">
-                                <p><b>ГРАФИК РАБОТЫ</b></p>
-                                <p>Пн - Пт с 09:00 до 18:00</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -234,6 +241,10 @@
 
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Our product', 'About us', 'Contacts']
+        navigationTooltips: ['Our product', 'About us', 'Contacts'],
+
+        scrollOverflow: true,
+        responsiveWidth: 1023,
+
 	});
 </script>

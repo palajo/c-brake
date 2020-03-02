@@ -7,12 +7,20 @@ header{
     width: 100%;
     z-index: 1;
 
-    background: url(../img/header-background.png);
+    background: url(../img/header-background-1920px.png);
 	background-size: cover;
 	background-position: bottom center;
 
     padding-top: 15px;
     padding-bottom: 15px;
+}
+header .container{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+footer .container{
+	padding-left: 25px;
+	padding-right: 25px;
 }
 footer{
 	position: fixed;
@@ -21,7 +29,7 @@ footer{
     z-index: 1;
 	bottom: 0;
 
-	background: url(../img/footer-background.png);
+	background: url(../img/footer-background-1920px.png);
 	background-size: cover;
 	background-position: top center;
 
@@ -99,10 +107,11 @@ ul.main-navigation > li.nav-item > a.nav-link{
     transition: 0.2s ease;
 }
 ul.main-navigation > li.nav-item.active > a.nav-link{
-    color: #C90015;
+    color: #f23030;
+	font-weight: 500;
 }
 ul.main-navigation > li.nav-item > a.nav-link.active{
-    color: #C90015;
+    color: #f23030;
 }
 ul.main-navigation > li.nav-item > a.nav-link:hover{
     color: #cdcbcb;
@@ -111,6 +120,8 @@ ul.main-navigation > li.nav-item > a.nav-link:hover{
 button.button.high-quality{
     line-height: 24px;
 	width: 180px;
+
+	cursor: default;
 }
 button.button{
 	display: inline-block;
@@ -207,7 +218,7 @@ a.my-language-switcher-link:hover::before{
     max-width: 450px;
 }
 .icon-graphic{
-    margin: 10px 0px;
+    margin-bottom: 10px;
 }
 h4.icon-graphic-heading{
     font-weight: 600;
@@ -216,7 +227,10 @@ h4.icon-graphic-heading{
 .about-width{
 	max-width: 900px;
 }
-
+.product-benefits{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
 /* margin-bottoms */
 .space-100px{
 	margin-bottom: 100px;
